@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+@import 'navbar';
+@import 'hero';
+@import 'search';
+@import 'sectionHeader';
+@import 'location';
+@import 'testimonials';   
+@import 'operations';
+@import 'CommonLocations';
+@import 'footer';
+
+body { 
+    font-family: 'Merriweather', serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: 0 20px;
+}
+

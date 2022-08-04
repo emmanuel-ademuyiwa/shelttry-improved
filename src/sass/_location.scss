@@ -1,0 +1,80 @@
+@import "variables";
+
+.locationContainer {
+  align-content: center;
+  margin: 70px 0;
+  cursor: pointer;
+  transition: 0.1s;
+
+  &:hover {
+    box-shadow: 1px 1px 10px 1px $lightGrey;
+    transform: scale(1.01);
+    transition: 0.1s;
+  }
+
+  .imgContainer {
+    width: 100%;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .title {
+    background-color: $lightDeepBlue;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+    .tag {
+      flex: 3;
+      text-align: center;
+      font-size: 25px;
+      color: $lightBlue;
+      margin-top: 10px;
+    }
+
+    .locationTitle {
+      flex: 8;
+      color: $white;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .locations {
+    display: flex;
+    justify-content: space-between;
+
+    .imgContainer {
+      min-width: 240px;
+      max-width: 240px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .locations {
+    display: flex;
+    justify-content: space-between;
+
+    .imgContainer {
+      min-width: 270px;
+      max-width: 270px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .locations {
+    display: flex;
+    justify-content: space-between;
+
+    .imgContainer {
+      min-width: 360px;
+      max-width: 360px;
+    }
+  }
+}

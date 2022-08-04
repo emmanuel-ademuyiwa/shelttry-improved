@@ -1,0 +1,96 @@
+@import "variables";
+
+.operations {
+  align-content: center;
+  margin: 70px 0;
+  cursor: pointer;
+  transition: 0.1s;
+  align-content: center;
+}
+
+.workflow {
+}
+
+.workflowSingle {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 60px;
+  width: 100%;
+  margin: 0 10px;
+  .description {
+    margin: 50px 0;
+    .title {
+      font-weight: 500;
+      font-size: 15px;
+      color: $lightDeepBlue;
+      text-transform: capitalize;
+    }
+    h4 {
+      line-height: 30px;
+      color: $darkGrey;
+      font-weight: 300;
+      font-size: 13px;
+    }
+  }
+  .imgContainer {
+    .cont {
+      width: 190px;
+      height: 167px;
+      text-align: center;
+      background: #edeff4;
+      padding-top: 21px;
+      border-radius: 50% 50%;
+      margin: 0 auto;
+
+      &:hover {
+        background-color: $lightBlue;
+        transition: .2s ease;
+      }
+
+      .smallCont {
+        border-radius: 50% 50%;
+        background: #e1e5ec;
+        width: 126px;
+        height: 126px;
+        margin-left: 17%;
+        margin-top: 10px;
+        z-index: 1;
+        transition: 0.5s ease;
+
+        &:hover {
+          background: $blueBg;
+          transition: 1s ease;
+        }
+
+        img {
+          margin: 0;
+          padding: 0;
+          margin-top: 10%;
+        }
+      }
+    }
+  }
+}
+
+.workflow_2_img {
+  width: 90%;
+  margin-top: 20% !important;
+}
+
+.workflow_3_img {
+  width: 80%;
+  margin-top: 20% !important;
+}
+
+@media (min-width: 768px) {
+  .workflow {
+    display: flex;
+  }
+}
+
+@media (max-width: 414px) {
+  .operations{
+    margin-left: -30px !important;
+    padding: 0 20px;
+  }
+}

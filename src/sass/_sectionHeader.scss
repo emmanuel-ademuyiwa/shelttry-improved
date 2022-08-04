@@ -1,0 +1,27 @@
+@import "variables";
+
+.sectionHeader {
+  text-align: center;
+  margin: 30px;
+
+  h1 {
+    color: $lightBlue;
+    font-weight: 900;
+    font-size: 25px;
+  }
+
+  h4 {
+    font-size: 18px;
+    color: $blue;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1px;
+  }
+
+  h6 {
+    line-height: 0;
+    font-size: 15px;
+    color: $lightGrey;
+    font-weight: bold;
+  }
+}

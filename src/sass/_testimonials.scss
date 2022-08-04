@@ -1,0 +1,49 @@
+@import "variables";
+
+.testimonials {
+  min-height: 40vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../images/bg.jpeg);
+  background-size: cover;
+  // background-position: center;
+  position: relative;
+  color: $white;
+  padding: 30px 0;
+
+  .testimonial {
+    width: 40%;
+    margin: 40px auto;
+    margin-bottom: 60px;
+    text-align: center;
+
+    h4 {
+      line-height: 25px;
+      margin: 100px 0;
+      font-size: 12px;
+      font-weight: 300;
+    }
+
+    h6 {
+      line-height: 0;
+      font-size: 15px;
+      color: $lightGrey;
+      font-weight: bold;
+    }
+  }
+}
+
+.white {
+  h1 {
+    color: $white;
+  }
+  h4 {
+    color: $white;
+  }
+}
+
+@media (max-width: 540px) {
+  .testimonial {
+    width: 95% !important;
+  }
+}

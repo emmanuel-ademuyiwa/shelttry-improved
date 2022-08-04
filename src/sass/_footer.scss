@@ -1,0 +1,142 @@
+@import "variables";
+
+.footer {
+  background-color: $blue;
+  color: $white;
+  padding: 20px 0;
+  margin-bottom: -20px;
+  .container {
+    margin: 20px;
+    display: -ms-grid;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .footerHeader {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+
+  .iconList { 
+    margin-top: 13px;
+  }
+  .icon {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 12px;
+    border: 2px solid $lightBlue;
+    cursor: pointer;
+    color: $lightBlue;
+    border-radius: 50% 50%;
+
+    &:hover {
+      color: $white;
+      background-color: $lightBlue;
+      transition: 0.5s;
+      font-weight: bold;
+    }
+  }
+  h5 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  input {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 13px;
+    padding: 10px;
+    border: none;
+    background: $inputBg;
+    color: $lightBlue;
+    outline: none;
+
+    &::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: $lightBlue;
+    }
+    &::-moz-placeholder {
+      /* Firefox 19+ */
+      color: $lightBlue;
+    }
+    &:-ms-input-placeholder {
+      /* IE 10+ */
+      color: $lightBlue;
+    }
+    &:-moz-placeholder {
+      /* Firefox 18- */
+      color: $lightBlue;
+    }
+  }
+
+  textarea {
+    margin: 5px 0;
+    font-size: 13px;
+    padding: 10px;
+    width: 100%;
+    background: $inputBg;
+    color: $lightBlue;
+    border: none;
+    outline: none;
+
+    &::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: $lightBlue;
+    }
+    &::-moz-placeholder {
+      /* Firefox 19+ */
+      color: $lightBlue;
+    }
+    &:-ms-input-placeholder {
+      /* IE 10+ */
+      color: $lightBlue;
+    }
+    &:-moz-placeholder {
+      /* Firefox 18- */
+      color: $lightBlue;
+    }
+  }
+
+  button {
+    margin: 5px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: $deepLightBlue;
+    color: $white;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+  .contact { 
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    h5 { 
+      line-height: 10px;
+    }
+  }
+}
+
+.col-1-4 {
+  margin-left: 70px;
+}
+
+@media (max-width: 455px) {
+  .col-1-4 {
+    margin-left: 0px;
+  }
+  input {
+    width: 90% !important;
+  }
+
+  textarea {
+    width: 90% !important;
+  }
+}
